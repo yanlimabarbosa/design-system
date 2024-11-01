@@ -1,4 +1,4 @@
-import { ComponentProps } from 'react'
+import { ButtonHTMLAttributes, ComponentProps } from 'react'
 import { styled } from './styles'
 
 export const Button = styled('button', {
@@ -12,7 +12,7 @@ export const Button = styled('button', {
 
   variants: {
     size: {
-      smal: {
+      small: {
         fontSize: 14,
         padding: '$2 $4',
       },
@@ -28,4 +28,7 @@ export const Button = styled('button', {
   },
 })
 
-export type ButtonProps = ComponentProps<typeof Button>
+export type ButtonProps = Omit<
+  ComponentProps<typeof Button>,
+  keyof ButtonHTMLAttributes<HTMLButtonElement> | 'key' | 'ref'
+>

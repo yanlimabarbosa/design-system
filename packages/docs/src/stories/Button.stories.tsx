@@ -1,7 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Button } from '@ignite-ui/react'
-
-type ButtonProps = React.ComponentProps<typeof Button>
+import { Button, ButtonProps } from '@ignite-ui/react/src/index'
 
 export default {
   title: 'Button',
@@ -13,12 +11,10 @@ export default {
 
 export const Primary: StoryObj<ButtonProps> = {
   args: {
-    size: '',
+    size: 'small',
   },
 }
 
 export const Big: StoryObj<ButtonProps> = {
-  args: {
-    size: 'smal',
-  },
+  args: { size: 'big' },
 }
