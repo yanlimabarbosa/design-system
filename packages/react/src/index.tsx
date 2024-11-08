@@ -1,34 +1,36 @@
-import { ButtonHTMLAttributes, ComponentProps } from 'react'
-import { styled } from './styles'
+export * from './components/Box'
 
-export const Button = styled('button', {
-  fontFamily: '$default',
-  backgroundColor: '$ignite300',
-  borderRadius: '$md',
-  padding: '$2 $4',
-  fontWeight: '$bold',
-  color: '$white',
-  border: 0,
+// import { ButtonHTMLAttributes, ComponentProps } from 'react'
+// import { styled } from './styles'
 
-  variants: {
-    size: {
-      small: {
-        fontSize: 14,
-        padding: '$2 $4',
-      },
-      big: {
-        fontSize: 16,
-        padding: '$3 $6',
-      },
-    },
-  },
+// export const Button = styled('button', {
+//   fontFamily: '$default',
+//   backgroundColor: '$ignite300',
+//   borderRadius: '$md',
+//   padding: '$2 $4',
+//   fontWeight: '$bold',
+//   color: '$white',
+//   border: 0,
 
-  defaultVariants: {
-    size: 'small',
-  },
-})
+//   variants: {
+//     size: {
+//       small: {
+//         fontSize: 14,
+//         padding: '$2 $4',
+//       },
+//       big: {
+//         fontSize: 16,
+//         padding: '$3 $6',
+//       },
+//     },
+//   },
 
-export type ButtonProps = Omit<
-  ComponentProps<typeof Button>,
-  keyof ButtonHTMLAttributes<HTMLButtonElement> | 'key' | 'ref'
->
+//   defaultVariants: {
+//     size: 'small',
+//   },
+// })
+
+// export type ButtonProps = Omit<
+//   ComponentProps<typeof Button>,
+//   keyof ButtonHTMLAttributes<HTMLButtonElement> | 'key' | 'ref'
+// >
