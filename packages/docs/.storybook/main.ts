@@ -28,7 +28,7 @@ const config: StorybookConfig = {
   },
   viteFinal: (config, { configType }) => ({
     ...config,
-    base: configType === "PRODUCTION" ? "/design-system" : config.base,
+    base: configType === "PRODUCTION" ? "/design-system/" : config.base,
   })
 }
 export default config;
