@@ -13,6 +13,7 @@ export default {
           {Story()}
         </Box>
       )
+      
     }
   ]
 } as Meta<TextInputProps>
