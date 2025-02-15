@@ -20,10 +20,6 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Create .nojekyll file
-        working-directory: ./packages/docs
-        run: touch storybook-static/.nojekyll
-
       - name: Deploy storybook
         working-directory: ./packages/docs
         run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
