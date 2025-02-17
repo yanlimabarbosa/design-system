@@ -17,6 +17,10 @@ jobs:
         with:
           node-version: 18
 
+      - name: Create .nojekyll file
+        working-directory: ./packages/docs
+        run: touch storybook-static/.nojekyll
+
       - run: npm ci
       - run: npm run build
 
