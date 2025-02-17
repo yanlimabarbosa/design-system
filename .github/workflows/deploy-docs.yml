@@ -19,6 +19,9 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+        env: 
+          TURBO_TOKEN: ${{ secrets.VERCEL-TOKEN }}
+          TURBO_TEAM: yanlimabarbosas-projects
 
       - name: Create .nojekyll file
         working-directory: ./packages/docs
