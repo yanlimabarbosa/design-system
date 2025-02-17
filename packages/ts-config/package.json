@@ -1,6 +1,8 @@
 {
-  "name": "@ignite-ui/ts-config",
-  "version": "1.0.0",
+  "name": "@yan-ui/ts-config",
+  "version": "3.0.0",
   "license": "MIT",
-  "private": "true"
+  "publishConfig": {
+    "access": "public"
+  }
 }
