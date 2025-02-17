@@ -1,5 +1,11 @@
 # @yan-ui/react
 
+## 3.0.1
+
+### Patch Changes
+
+- aee3580: Add option to pass reference to TextInput and adjust some styles
+
 ## 3.0.0
 
 ### Major Changes
