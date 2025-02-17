@@ -29,6 +29,11 @@ const config: StorybookConfig = {
   viteFinal: (config, { configType }) => ({
     ...config,
     base: configType === "PRODUCTION" ? "/design-system/" : config.base,
+    build: {
+      outDir: "storybook-static",
+      assetsDir: "assets",
+    },
+    publicDir: "public",
   })
 }
 export default config;
